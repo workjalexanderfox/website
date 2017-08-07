@@ -1,5 +1,3 @@
-### Alternatives
-
 If you are using another OS or one of the other options specific to your OS
 will not work for you, there are a couple of alternatives. You will need to
 [install Node.js](https://nodejs.org/) if you don't already have it installed.
@@ -11,6 +9,7 @@ recommended to install Yarn via our packages instead.
 
 #### Install via npm
 
+<div class="install-only-stable install-only-rc" markdown="1">
 > **Note:** Installation of Yarn via npm is generally not recommended.
 > When installing Yarn with Node-based package managers, the package is not signed,
 > and the only integrity check performed is a basic SHA1 hash, which is a
@@ -25,9 +24,20 @@ if you already have it installed. If you already have
 
 Once you have npm installed you can run:
 
+<div class="install-only-stable" markdown="1">
 ```sh
 npm install --global yarn
 ```
+</div>
+<div class="install-only-rc" markdown="1">
+```sh
+npm install --global yarn@rc
+```
+</div>
+</div>
+<div class="install-only-nightly" markdown="1">
+Nightly builds of Yarn are not available via npm.
+</div>
 
 ### Path Setup
 
